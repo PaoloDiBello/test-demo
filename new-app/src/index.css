@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', 'Open Sans', 'Lucida Grande',            Verdana, Tahoma, Arial, sans-serif !important;
+  font-size: 14px !important;
+  text-align: center;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.wineBox {
+  min-width: 350px;
+  height: 220px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fcfcfc;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.wineBoxColLx, .wineBoxColRx {
+  width: 50%;
+  float: left;
+}
+
+.wineBox .wineName {
+  font-family: 'Lato', sans-serif !important;
+  font-size: 14px;
+  color: #444;
+  font-weight: 300;
+  width: 150px;
+  height: 105px;
+  margin: 0 auto;
+  line-height: 16px;
+}
+
+.wineName {
+  padding: 2px 2px 2px 10px;
+  border-radius: 3px;
+}
+
+.wineBox .buy-button {
+  width: 150px;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 3px;
+  background-color: #2285bb;
+  border: 0 none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 11.5px;
+  margin-top: -2px;
+}
+
+
+
+.rsBuyNowContainer {
+  background-color: rgba(255,255,255,1);
+  border-radius: 5px;
+  height: 178px;
+  margin-left: 3.5px;
+  margin-top: -175px;
+  padding: 5px;
+  position: absolute;
+  width: 165px;
+  text-align: center;
+  color: #444444;
+  font-family: "Lato",sans-serif !important;
+  font-size: 14px;
+  font-weight: 300;
+  z-index: 1000;
+}
+
+.rsQuantity {
+  border: 1px solid #2285bb !important;
+  width: 130px;
+  color: #444;
+  margin-top: 5px;
+}
+
+
+.wineBox .wineName small {
+  color: #888;
+}
+
+.rsPriceSummary {
+  text-align: center;
+  color: #444444;
+  font-family: "Lato",sans-serif !important;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.rsBuyButton {
+  width: 150px;
+  font-size: 12px;
+  margin: 0 auto !important;
+  background-color: #2285bb;
+  border: 0 none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.wineBottleIcon {
+  height: 28px;
+  width: auto;
+  margin-left: 3px;
+  margin-top: 1px;
+  position: absolute;
+}
+
+div {
+  display: block;
+}
+
+.fa.fa-plus-square{
+  color:#2285bb!important;
+}
+
+.wineBox .winePrice {
+  font-family: 'Lato', sans-serif !important;
+  font-size: 22px;
+  color: #444;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.vatSpan {
+  background-color: #ececec;
+  border-radius: 2.5px;
+  color: #444;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 3px;
+  margin-top: 10px;
+  position: absolute;
+  text-transform: uppercase;
+  width: 35px;
+}
+
+.wineLabelBoxBg:hover{
+    transform: scale(2.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  
+}
+
+
+
+.zoomWineLabel {
+  color: #2285bb;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.pull-right {
+  float: right!important;
+}
+
+.wineLabelBoxBg {
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all .45s ease-in-out;
+}
+
+.wineLabelBox {
+  width: 150px;
+  height: 150px;
+  margin: 0px auto;
+  margin-bottom: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.wineBoxColLx {
+  border-right: 1px solid #dadada;
+}
+
+.winemakerName {
+  color: #444444;
+  font-family: "Lato",sans-serif !important;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: bottom;
+  margin-left: 7px;
+  margin-right: 7px;
+  background-color: #ececec;
+  border-radius: 3px;
+  margin-top: 0px;
+}
