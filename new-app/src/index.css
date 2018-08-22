@@ -12,9 +12,14 @@ img {
   vertical-align: middle;
 }
 
+a{
+cursor: pointer;
+
+}
+
 .wineBox {
   min-width: 350px;
-  height: 220px;
+  height: 250px;
   margin: 10px;
   padding: 10px;
   background-color: #fcfcfc;
@@ -152,8 +157,6 @@ div {
   
 }
 
-
-
 .zoomWineLabel {
   color: #2285bb;
   padding: 5px;
@@ -165,7 +168,7 @@ div {
 }
 
 .wineLabelBoxBg {
-  width: 150px;
+  width: auto;
   height: 150px;
   background-size: contain;
   background-position: center;
