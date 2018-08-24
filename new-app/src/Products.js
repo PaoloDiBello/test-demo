@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Modal, Button } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 
 class Products extends Component {
     state = {
@@ -8,6 +8,7 @@ class Products extends Component {
         show: null,
         show2: null,
         hovering: false,
+        keyb: 0
     }
 
     handleShow = this.handleShow.bind(this);
@@ -79,28 +80,30 @@ class Products extends Component {
                             </div>
 
                         </div>
-                        <a onClick={() => this.handleShow2(product.id)}>Product Sheet</a>
+                        <a onClick={() => this.handleShow2(product.id)} className="padding-sheet">Product Sheet</a>
                     </div>
                     <div className="wineBoxColRx" onMouseEnter={this.handleMouseHover}
                         onMouseLeave={() => this.setState({ hovering: false })}>
-                        {this.state.hovering ?
-                            <div>
-                                Select quantity :
-                    <div>Quantity: <input type="number" name="quantity_bottle" className="rsQuantity wineQuantity" step={1} max={product.quantity_bottle} defaultValue={1} min={1} onChange={this.handleChange.bind(this)} id={product.id} />
-                                    &nbsp;<img src={"http://www.viniexport.com/trading/vximg/wineBottleIcon.png"} className="wineBottleIcon" alt="bottle_icon" /></div>
-                                <div>Subtotal: {product.quantity_bottle}</div>
-                                <div>Bottles: {(this.state.key + "") === (product.id + "") ? product.winePrice * this.state.quantity : product.winePrice}</div>
 
+                        {this.state.keyb + "" === product.id + "" && this.state.hovering ?
+                            <div className="inside-rx-box">
+                                Select quantity :
+                    <div><input type="number" name="quantity_bottle" className="rsQuantity wineQuantity" step={1} max={product.quantity_bottle} defaultValue={1} min={1} onChange={this.handleChange.bind(this)} id={product.id} />
+                                    &nbsp;<img src={"http://www.viniexport.com/trading/vximg/wineBottleIcon.png"} className="wineBottleIcon" alt="bottle_icon" /></div>
                                 <br />
-                            </div> : <div>
-                                <div className="wineName">Name: {product.wineName}<br /><small>{product.source}</small></div>
+                                <div>Subtotal: <strong>{product.quantity_bottle}</strong></div>
+                                <div>Bottles: <strong>$ {(this.state.key + "") === (product.id + "") ? (product.winePrice * this.state.quantity).toFixed(2) : product.winePrice}</strong></div>
+
+                            </div> : <div className="inside-rx-box">
+                                <div className="wineName">{product.wineName} - {product.wineMaker}<br /><small>{product.source}</small></div>
                                 <input type="hidden" name="etichetta_id" value={product.id} />
                                 <br />
                                 <input type="hidden" className="rsPrice" name="prezzo_vendita" value={product.winePrice} />
-                                <div className="rsPrice"> {product.winePrice} $</div>
+                                <div className="rsPrice winePrice"> $ {product.winePrice}<span class="vatSpan">+Vat</span></div>
                             </div>}
+
                         <br />
-                        <div className="buy-button" onMouseEnter={() => this.setState({ hovering: true })}>ADD TO CART <i className="fa fa-shopping-cart"></i>  </div>
+                        <div className="buy-button" onMouseEnter={() => this.setState({ hovering: true, keyb: product.id })}>ADD TO CART <i className="fa fa-shopping-cart"></i>  </div>
                     </div>
 
                     <div className="clearfix" />
@@ -109,7 +112,7 @@ class Products extends Component {
 
 
 
-                </div >
+                </div>
 
 
 

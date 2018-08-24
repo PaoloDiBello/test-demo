@@ -47,7 +47,7 @@ cursor: pointer;
 }
 .wineBox {
   min-width: 350px;
-  height: 250px;
+  height: 238px;
   margin: 10px;
   padding: 10px;
   background-color: #fcfcfc;
@@ -60,6 +60,22 @@ cursor: pointer;
   width: 50%;
   float: left;
 }
+
+.padding-sheet{
+  padding-bottom:5px!important;
+margin-bottom:1em!important;
+}
+
+.inside-rx-box{
+  background-color: rgba(255,255,255,1)!important;
+  height:140px;
+  width:142px;
+margin:0 auto;
+font-family: "Lato",sans-serif !important;
+color:#444!important;
+font-weight: 300!important;
+}
+
 
 .wineBox .wineName {
   font-family: 'Lato', sans-serif !important;
@@ -167,7 +183,6 @@ div {
 }
 
 
-
 .vatSpan {
   background-color: #ececec;
   border-radius: 2.5px;
@@ -189,7 +204,9 @@ div {
 
 .zoomWineLabel {
   color: #2285bb;
-  padding: 5px;
+  padding-left:5px;
+  padding-right:5px;
+  padding-top:5px;
   cursor: pointer;
 }
 
@@ -223,6 +240,7 @@ div {
 
 .wineBoxColLx {
   border-right: 1px solid #dadada;
+  padding-bottom:4px;
 }
 
 .winemakerName {
