@@ -255,3 +255,233 @@ div {
   border-radius: 3px;
   margin-top: 0px;
 }
+
+/*/////////////////////*/
+
+element.style {
+  display: block;
+  width: 1349px;
+  padding-right: 17px;
+}
+#wsColLx {
+  width: 50%;
+  float: left;
+  border-right: 1px solid #ddd;
+  padding-right: 10px;
+}
+
+#wsColRx {
+  width: 50%;
+  float: left;
+  font-family: 'Lato', sans-serif !important;
+  font-size: 14px;
+  color: #444;
+  font-weight: 300;
+  line-height: 18px;
+  padding-left: 20px;
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -13em;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+user agent stylesheet
+div {
+  display: block;
+}
+body {
+  font-family: 'Lato', 'Open Sans', 'Lucida Grande', Verdana, Tahoma, Arial, sans-serif !important;
+  font-size: 14px !important;
+}
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wsWineName {
+  font-family: 'Lato', sans-serif !important;
+  font-size: 18px;
+  color: #444;
+  font-weight: 400;
+  text-align: center;
+}
+
+.wsWineDenomination {
+  font-family: 'Lato', sans-serif !important;
+  font-size: 14px;
+  color: #444;
+  font-weight: 400;
+  text-align: center;
+}
+
+.wsWinemaker {
+  font-family: 'Lato', sans-serif !important;
+  font-size: 14px;
+  color: #444;
+  font-weight: 400;
+  text-align: center;
+  font-style: italic;
+}
+
+.modal-body {
+  color: #4e4e4e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.modal-body {
+  position: relative;
+  padding: 15px;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+#wsColLxLx {
+  width: 40%;
+  float: left;
+}
+
+#wsColLxRx {
+  width: 60%;
+  float: left;
+  font-family: 'Lato', sans-serif !important;
+  font-size: 14px;
+  color: #444;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.wsWineSourcePrice, .wsWinePrice {
+  color: #444444;
+  font-family: "Lato",sans-serif !important;
+  font-size: 28px;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.wsPriceSummary {
+  text-align: center;
+  color: #444444;
+  font-family: "Lato",sans-serif !important;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.wsBuyButton {
+  background-color: #2285bb;
+  border: 0 none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 8px;
+  padding: 2px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.wsWineSourcePrice, .wsWinePrice {
+  color: #444444;
+  font-family: "Lato",sans-serif !important;
+  font-size: 28px;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.vatFlag {
+  background-color: #b3b3b3;
+  border-radius: 2.5px;
+  color: #fff;
+  float: right;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  margin-top: 6px;
+  margin-left: 5px;
+  padding: 2px;
+  text-transform: uppercase;
+  width: 46px;
+  text-align: center;
+  display: inline-block;
+}
+
+.wsQuantityContainer{
+display:inline-block;
+margin-left:1.2em;
+}
+.wineBottleIcon {
+  height: 28px;
+  width: auto;
+  margin-left: 3px;
+  margin-top: 1px;
+  position: absolute;
+}
+
+
+.wsBottleImage {
+  height: 280px;
+  width: 100%;
+  background-color: #fff;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+input[type="text"], input[type="number"], input[type="password"], select {
+  border: 1px solid #4e4e4e;
+  padding: 2px;
+  border-radius: 3px;
+  box-shadow: none;
+  line-height: 20px;
+}
