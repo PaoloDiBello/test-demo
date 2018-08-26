@@ -36,6 +36,10 @@ class Products extends Component {
         this.setState({ quantity: event.target.value, key: event.target.id })
     }
 
+    handleOnMouseLeave() {
+
+    }
+
 
     render() {
         const { products } = this.props;
@@ -108,7 +112,7 @@ class Products extends Component {
                         <a onClick={() => this.handleShow2(product.id)} className="padding-sheet">Product Sheet</a>
                     </div>
                     <div className="wineBoxColRx" onMouseEnter={this.handleMouseHover}
-                        onMouseLeave={() => this.setState({ hovering: false, quantity_bottle: 1 })}>
+                        onMouseLeave={() => this.setState({ hovering: false, quantity: 1 })}>
 
                         {this.state.keyb + "" === product.id + "" && this.state.hovering ?
                             <div className="inside-rx-box">
