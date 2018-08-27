@@ -8,7 +8,8 @@ class Products extends Component {
         show: null,
         show2: null,
         hovering: false,
-        keyb: 0
+        keyb: 0,
+        arr: []
     }
 
     handleShow = this.handleShow.bind(this);
@@ -36,9 +37,38 @@ class Products extends Component {
         this.setState({ quantity: event.target.value, key: event.target.id })
     }
 
-    handleOnMouseLeave() {
+    handleOnClick(id, quantity) {
+
+        let newArr = [...this.state.arr];
+        let found = false;
+
+        newArr.forEach(function (element) {
+
+            if (element["id"] === id) {
+                found = true;
+                element["quantity"] = quantity;
+            }
+        });
+
+        if (!found) {
+            newArr.push({ "id": id, "quantity": quantity })
+        }
+
+        this.setState({ arr: newArr })
+
+        /*  newArr["id"].indexOf(id);
+           var index = newArr["id"].indexOf(id);
+           if (index !== -1) {
+               newArr[index]["id"] = id;
+           } else {
+               newArr[index].push({ "id": id, "quantity": quantity })
+           }
+           this.setState({ arr: newArr });
+   */
+
 
     }
+
 
 
     render() {
@@ -139,7 +169,7 @@ class Products extends Component {
                         }
 
                         <br />
-                        <div className="buy-button" onMouseEnter={() => this.setState({ hovering: true, keyb: product.id })}>ADD TO CART <i className="fa fa-shopping-cart"></i>  </div>
+                        <div className="buy-button" onClick={() => this.handleOnClick(product.id, this.state.quantity)} onMouseEnter={() => this.setState({ hovering: true, keyb: product.id })}>ADD TO CART <i className="fa fa-shopping-cart"></i>  </div>
                     </div>
 
                     <div className="clearfix" />
@@ -155,9 +185,17 @@ class Products extends Component {
             )
         });
 
+
         return (
-            <div className="container-fluid" >
-                {productsList}
+            <div>
+                <div className="container-fluid" >
+                    {productsList}
+                    {<br />}
+                    {JSON.stringify(this.state.arr)}
+                </div>
+
+
+
             </div>
         )
 
